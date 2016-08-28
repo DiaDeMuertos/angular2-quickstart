@@ -4,4 +4,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app/app.component.css'],
   templateUrl: './app/app.component.html',
 })
-export class AppComponent { }
+export class AppComponent {
+  title = 'Tour of Heroes';
+  hero = 'Windstorm';
+}

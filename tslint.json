@@ -9,7 +9,7 @@
     "label-position": true,
     "label-undefined": true,
     "max-line-length": [true, 140],
-    "member-access": true,
+    // "member-access": true,
     "member-ordering": [true,
       "public-before-private",
       "static-before-instance",
@@ -50,7 +50,7 @@
     ],
     "quotemark": [true, "single", "avoid-escape"],
     "radix": true,
-    "semicolon": true,
+    // "semicolon": true,
     "trailing-comma": [true, {
       "singleline": "never",
       "multiline": "always"
