@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { Hero } from '../models/hero';
@@ -11,7 +11,7 @@ import { HeroService } from '../services/hero.service';
     templateUrl: 'hero-detail.component.html',
 })
 export class HeroDetailComponent implements OnInit {
-    @Input() hero: Hero;
+    hero: Hero;
 
     constructor(private heroService: HeroService, private route: ActivatedRoute) { }
 
@@ -22,7 +22,7 @@ export class HeroDetailComponent implements OnInit {
                 .then(hero => this.hero = hero);
         });
     }
-    
+
     goBack(): void {
         window.history.back();
     }
